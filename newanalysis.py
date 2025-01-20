@@ -19,7 +19,6 @@ def validateData(df):
     if missing_cols:
         raise ValueError(f"Missing required columns: {missing_cols}")
 
-    # Ensure numeric columns are float
     numeric_cols = ['Units_Sold', 'Revenue', 'Cost_of_Goods_Sold', 'Profit',
                     'Profit_Margin', 'Marketing_Spend', 'Brand_Awareness_Score',
                     'Customer_Rating', 'Volume_of_Feedback', 'Competitor_Price',
